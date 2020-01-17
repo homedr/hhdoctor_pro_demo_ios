@@ -1,0 +1,31 @@
+PODS:
+  - HHDoctor_pro (2.4.6.01):
+    - HHDoctor_pro/Base (= 2.4.6.01)
+    - NIMSDK
+  - HHDoctor_pro/Base (2.4.6.01):
+    - NIMSDK
+  - NIMSDK (7.2.0)
+
+DEPENDENCIES:
+  - "HHDoctor_pro (from `git@code.hh-medic.com:hh_public/HHDoctorProSDK.ios.git`)"
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - NIMSDK
+
+EXTERNAL SOURCES:
+  HHDoctor_pro:
+    :git: "git@code.hh-medic.com:hh_public/HHDoctorProSDK.ios.git"
+
+CHECKOUT OPTIONS:
+  HHDoctor_pro:
+    :commit: 224f20800ff560327b3308814b6d14ab21426982
+    :git: "git@code.hh-medic.com:hh_public/HHDoctorProSDK.ios.git"
+
+SPEC CHECKSUMS:
+  HHDoctor_pro: 3382ce57e0bf127c9e8cbdbb7230196f4f9e0c78
+  NIMSDK: dddf54a13f29bee07a6b247b7763c40be39f4ff1
+
+PODFILE CHECKSUM: 0486752ad76047621be12f99c0b393f209579619
+
+COCOAPODS: 1.8.4
