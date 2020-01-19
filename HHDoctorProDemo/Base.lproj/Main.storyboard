@@ -42,24 +42,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="自定义标题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0h-KU-GFG">
-                                <rect key="frame" x="40" y="231" width="334" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="e0h-KU-GFG" firstAttribute="leading" secondItem="aH0-VH-lNl" secondAttribute="leadingMargin" constant="20" id="2nr-FT-5Dv"/>
                             <constraint firstItem="bQc-zj-Oep" firstAttribute="centerX" secondItem="aH0-VH-lNl" secondAttribute="centerX" id="3Ex-K6-azQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VAi-cU-Ezq" secondAttribute="trailing" constant="20" id="9t1-Db-wkU"/>
                             <constraint firstItem="VAi-cU-Ezq" firstAttribute="leading" secondItem="aH0-VH-lNl" secondAttribute="leadingMargin" constant="20" id="CVt-rM-Hwy"/>
-                            <constraint firstItem="e0h-KU-GFG" firstAttribute="centerX" secondItem="aH0-VH-lNl" secondAttribute="centerX" id="FVr-k5-lbi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="e0h-KU-GFG" secondAttribute="trailing" constant="20" id="c24-I0-B0V"/>
                             <constraint firstItem="lYZ-Xe-7FH" firstAttribute="top" secondItem="OGW-lb-ICh" secondAttribute="bottom" constant="25" id="d37-fo-u9p"/>
                             <constraint firstItem="bQc-zj-Oep" firstAttribute="top" secondItem="VAi-cU-Ezq" secondAttribute="bottom" constant="20" id="gIz-5A-HrY"/>
                             <constraint firstItem="bQc-zj-Oep" firstAttribute="centerY" secondItem="aH0-VH-lNl" secondAttribute="centerY" id="gYb-kh-11U"/>
-                            <constraint firstItem="VAi-cU-Ezq" firstAttribute="top" secondItem="e0h-KU-GFG" secondAttribute="bottom" constant="20" id="nX4-UD-Lky"/>
                             <constraint firstItem="OGW-lb-ICh" firstAttribute="centerX" secondItem="aH0-VH-lNl" secondAttribute="centerX" id="pYW-TH-tQC"/>
                             <constraint firstItem="VAi-cU-Ezq" firstAttribute="centerX" secondItem="aH0-VH-lNl" secondAttribute="centerX" id="t50-6P-Gk9"/>
                         </constraints>
@@ -75,7 +66,6 @@
                     <connections>
                         <outlet property="mDescLbl" destination="OGW-lb-ICh" id="QFz-jB-R6t"/>
                         <outlet property="mTextView" destination="VAi-cU-Ezq" id="55L-zF-CLz"/>
-                        <outlet property="mTitleText" destination="e0h-KU-GFG" id="fgt-eO-laL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfy-wR-TOi" sceneMemberID="firstResponder"/>

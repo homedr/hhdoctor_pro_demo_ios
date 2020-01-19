@@ -14,7 +14,6 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mDescLbl: UILabel!
     @IBOutlet weak var mTextView: UITextView!
-    @IBOutlet weak var mTitleText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +24,6 @@ class ViewController: UIViewController {
     // 跳转视频医生
     @IBAction func doJump2doctor(_ sender: UIButton) {
         self.mDescLbl.text = ""
-
-        // 设置 title
-        HHDoctor.default.title = mTitleText.text ?? "视频医生"
         
         // 跳转视频界面
         HHDoctor.default.callDoctor(mTextView.text, topVC: self.navigationController!) { [weak self] in
@@ -42,11 +38,12 @@ class ViewController: UIViewController {
     
     // 退出账户
     @IBAction func doLogout(_ sender: UIBarButtonItem) {
-        HHMSDK.default.logout {
+        self.mDescLbl.text = ""
+        HHMSDK.default.logout { [weak self] in
             if let error = $0 {
-                print("退出登录失败:" + error)
+                self?.mDescLbl.text = "退出登录失败:" + error
             } else {
-                print("退出登录成功")
+                self?.mDescLbl.text = "退出登录成功"
             }
         }
     }
