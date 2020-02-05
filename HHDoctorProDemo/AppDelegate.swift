@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         HHDoctor.default.start(sdkProductId: "3000", debug: false, develop: true, title: "视频医生")
+        
         return true
     }
 
